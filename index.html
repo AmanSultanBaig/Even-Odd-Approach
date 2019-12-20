@@ -4,9 +4,25 @@
 
 </head>
 <body>
-
-<h1>My First CSS Example</h1>
-<p>This is a paragraph.</p>
+  
+<button id="clk_btn">Click me!</button>
+<p id="show"></p>
 
 </body>
+  <script>
+  // in example 2 functionalities are implemented
+  // on one button click handler!
+
+var num = 3;
+  document.getElementById('clk_btn').addEventListener('click',function(){
+    // according to even odd statement can print
+  if(num % 2 == 0) {
+     console.log('even')
+     document.getElementById('show').innerHTML = 'Statement 1';
+  }else{
+     document.getElementById('show').innerHTML = 'Statement 2';
+     console.log('odd')
+  }
+ });
+  </script>
 </html>
