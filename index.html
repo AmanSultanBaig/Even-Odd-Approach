@@ -13,9 +13,10 @@
   // in example 2 functionalities are implemented
   // on one button click handler!
 
-var num = 3;
-  document.getElementById('clk_btn').addEventListener('click',function(){
-    // according to even odd statement can print
+let num = 0
+  // according to even / odd statement will print one after other
+document.getElementById('clk_btn').addEventListener('click',() => {
+  num++
   if(num % 2 == 0) {
      console.log('even')
      document.getElementById('show').innerHTML = 'Statement 1';
@@ -23,6 +24,6 @@ var num = 3;
      document.getElementById('show').innerHTML = 'Statement 2';
      console.log('odd')
   }
- });
+});
   </script>
 </html>
